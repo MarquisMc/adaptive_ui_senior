@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/your-username/adaptive_ui_senior/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📖 Documentation
+    url: https://github.com/your-username/adaptive_ui_senior/blob/main/README.md
+    about: Read the comprehensive documentation and usage guide
+  - name: 🔧 Contributing Guide
+    url: https://github.com/your-username/adaptive_ui_senior/blob/main/CONTRIBUTING.md
+    about: Learn how to contribute to the project

@@ -1,0 +1,122 @@
+name: ❓ Question
+description: Ask a question about usage or implementation
+title: "[Question]: "
+labels: ["question", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about using Adaptive UI Senior? We're here to help!
+        
+        Before asking, please check:
+        - 📖 [Documentation](../README.md)
+        - 💬 [GitHub Discussions](../../discussions) for community Q&A
+        - 🔍 [Existing Issues](../../issues) to see if your question was already answered
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have checked the following
+      options:
+        - label: I have read the documentation and README
+          required: true
+        - label: I have searched existing issues and discussions
+          required: true
+        - label: This is specifically about Adaptive UI Senior (not general Flutter questions)
+          required: true
+
+  - type: dropdown
+    id: question-category
+    attributes:
+      label: Question Category
+      description: What type of question is this?
+      options:
+        - Usage - How to use a specific feature
+        - Implementation - How to implement something
+        - Best Practices - Recommendations for accessibility
+        - Troubleshooting - Something isn't working as expected
+        - Architecture - Understanding the package design
+        - Performance - Optimization questions
+        - Compatibility - Platform or version compatibility
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Package Version
+      description: What version are you using?
+      placeholder: "e.g., 1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: "Ask your question here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish? What's your use case?
+      placeholder: |
+        I'm building an app for senior users and I need to...
+        I want to implement...
+        I'm trying to understand...
+
+  - type: textarea
+    id: code-sample
+    attributes:
+      label: Code Sample (if applicable)
+      description: Show us what you're trying to do or what you've tried so far
+      render: dart
+      placeholder: |
+        // Your code here
+        AdaptiveText(
+          'Example',
+          accessibilityService: myService,
+        )
+
+  - type: textarea
+    id: expected-outcome
+    attributes:
+      label: Expected Outcome
+      description: What result are you hoping to achieve?
+      placeholder: "Describe what you want to happen..."
+
+  - type: textarea
+    id: research-done
+    attributes:
+      label: Research Done
+      description: What have you already tried or researched?
+      placeholder: |
+        - Checked the documentation section on...
+        - Tried the example code for...
+        - Searched for...
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How urgent is this question for you?
+      options:
+        - Not urgent - Just curious
+        - Somewhat urgent - Would help my project
+        - Urgent - Blocking my development
+        - Critical - Need answer for production issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other details that might help us answer your question
+      placeholder: "Add any other relevant information..."

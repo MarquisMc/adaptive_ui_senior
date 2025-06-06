@@ -1,0 +1,178 @@
+name: 🚀 Feature Request
+description: Suggest a new feature or enhancement
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature for Adaptive UI Senior! Your ideas help make Flutter apps more accessible.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed the following
+      options:
+        - label: I have searched existing issues to ensure this feature hasn't been requested
+          required: true
+        - label: I have read the documentation to see if this feature already exists
+          required: true
+        - label: This feature request is related to accessibility or senior-friendly UI
+          required: true
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature Category
+      description: What category does this feature fall under?
+      options:
+        - New Widget
+        - Accessibility Enhancement
+        - Theme/Styling
+        - Age-based Adaptation
+        - System Integration
+        - Developer Experience
+        - Performance
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my use case
+        - Critical - Blocking my project
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: "Describe the feature..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? What accessibility challenge does it address?
+      placeholder: "Describe the problem this feature would solve..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Describe your specific use case for this feature
+      placeholder: |
+        Example:
+        As a developer building an app for senior users, I need...
+        So that my users can...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How do you envision this feature working?
+      placeholder: "Describe your proposed solution..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternative-solutions
+    attributes:
+      label: Alternative Solutions
+      description: What alternative solutions have you considered?
+      placeholder: "Describe alternative approaches you've considered..."
+
+  - type: textarea
+    id: api-design
+    attributes:
+      label: Proposed API Design
+      description: If applicable, provide a code example of how you'd like the API to work
+      render: dart
+      placeholder: |
+        // Example of how the new feature might be used
+        AdaptiveNewWidget(
+          // Your proposed API here
+        )
+
+  - type: textarea
+    id: accessibility-impact
+    attributes:
+      label: Accessibility Impact
+      description: How will this feature improve accessibility for users?
+      placeholder: |
+        - Improves usability for users with visual impairments
+        - Makes navigation easier for senior users
+        - Enhances compatibility with screen readers
+        - etc.
+
+  - type: dropdown
+    id: target-users
+    attributes:
+      label: Target Users
+      description: Which user groups would benefit most from this feature?
+      multiple: true
+      options:
+        - Senior users (65+)
+        - Users with visual impairments
+        - Users with motor impairments
+        - Users with cognitive impairments
+        - All users
+        - Developers
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: implementation-considerations
+    attributes:
+      label: Implementation Considerations
+      description: Please check any that apply to your feature request
+      options:
+        - label: This feature should work across all platforms (iOS, Android, Web, Desktop)
+        - label: This feature needs system-level accessibility integration
+        - label: This feature requires new dependencies
+        - label: This feature might introduce breaking changes
+        - label: This feature needs extensive testing for accessibility compliance
+
+  - type: textarea
+    id: research-references
+    attributes:
+      label: Research/References
+      description: Any research, articles, or examples that support this feature request
+      placeholder: |
+        - WCAG guidelines: https://...
+        - Research paper: https://...
+        - Similar implementation: https://...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other context or information about the feature request
+      placeholder: "Add any other context here..."
+
+  - type: checkboxes
+    id: contribution-willingness
+    attributes:
+      label: Contribution
+      description: Would you be willing to contribute to this feature?
+      options:
+        - label: I'd be willing to implement this feature myself
+        - label: I'd be willing to help test this feature
+        - label: I'd be willing to help with documentation
+        - label: I'd be willing to provide feedback during development

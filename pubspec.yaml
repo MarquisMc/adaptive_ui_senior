@@ -1,8 +1,22 @@
 name: adaptive_ui_senior
-description: "A new Flutter project."
+description: "A comprehensive Flutter package for creating accessible, senior-friendly user interfaces with dynamic font scaling, high contrast themes, and adaptive touch targets."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+homepage: https://github.com/your-username/adaptive_ui_senior
+repository: https://github.com/your-username/adaptive_ui_senior
+issue_tracker: https://github.com/your-username/adaptive_ui_senior/issues
+
+topics:
+  - accessibility
+  - senior-friendly
+  - adaptive-ui
+  - flutter
+  - widgets
+  - font-scaling
+  - high-contrast
+  - inclusive-design
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -46,6 +60,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  
+  # Test coverage reporting
+  coverage: ^1.7.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
