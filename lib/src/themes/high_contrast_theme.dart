@@ -1,7 +1,6 @@
 // lib/src/themes/high_contrast_theme.dart
 
 import 'package:flutter/material.dart';
-import '../utils/color_extensions.dart';
 
 /// Provides high contrast theme configurations optimized for senior users
 class HighContrastTheme {

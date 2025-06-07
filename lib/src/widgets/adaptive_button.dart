@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import '../services/accessibility_service.dart';
 import '../utils/tap_target_utils.dart';
-import '../utils/color_extensions.dart';
 import 'adaptive_text.dart';
 import 'helpers/animated_adaptive_constraint.dart';
 
