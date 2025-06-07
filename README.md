@@ -120,6 +120,24 @@ class MyHomePage extends StatelessWidget {
   }
 }
 ```
+# Coding Guidelines
+
+## Color Opacity
+
+In this project, when modifying the opacity of a `Color`, please use the custom `withValues(alpha: ...)` extension method instead of `withOpacity(...)`. `withOpacity()` is considered deprecated for the purposes of this project to maintain consistency with our custom extension.
+
+**Preferred:**
+```dart
+const Color(0xFFFFFFFF).withValues(alpha: .08);
+Color myColor = anotherColor.withValues(alpha: .50);
+```
+
+**Not Preferred:**
+```dart
+const Color(0xFFFFFFFF).withOpacity(.08);
+```
+
+This convention is already in use, for example, in `lib/src/themes/high_contrast_theme.dart`.
 
 ## Core Components
 
