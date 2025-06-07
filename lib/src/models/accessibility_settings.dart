@@ -40,6 +40,8 @@ class AccessibilitySettings {
   });
 
   /// Creates a copy of this settings object with updated values
+  static const Object _sentinel = Object();
+
   AccessibilitySettings copyWith({
     double? fontScale,
     bool? highContrastMode,
@@ -47,7 +49,7 @@ class AccessibilitySettings {
     double? minTapTargetSize,
     bool? useSystemSettings,
     ThemeMode? themeMode,
-    int? age,
+    Object? age = _sentinel,
     bool? useAgeBasedAdaptation,
   }) {
     return AccessibilitySettings(
@@ -57,7 +59,7 @@ class AccessibilitySettings {
       minTapTargetSize: minTapTargetSize ?? this.minTapTargetSize,
       useSystemSettings: useSystemSettings ?? this.useSystemSettings,
       themeMode: themeMode ?? this.themeMode,
-      age: age ?? this.age,
+      age: identical(age, _sentinel) ? this.age : age as int?,
       useAgeBasedAdaptation:
           useAgeBasedAdaptation ?? this.useAgeBasedAdaptation,
     );
