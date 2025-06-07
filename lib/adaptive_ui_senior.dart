@@ -17,6 +17,7 @@ export 'src/themes/high_contrast_theme.dart';
 // Utilities
 export 'src/utils/font_scale_utils.dart';
 export 'src/utils/tap_target_utils.dart';
+export 'src/utils/color_extensions.dart';
 
 // Widgets
 export 'src/widgets/adaptive_text.dart';
